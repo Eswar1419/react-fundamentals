@@ -1,0 +1,67 @@
+import Id from "./Id"
+import ProductCard from "./ProductCard"
+import BlogPost from "./BlogPost.jsx"
+
+function App() {
+  const product = "laptop"
+  const price = 25000
+  const Avilable = true
+  const Array = [{
+    product: "mobile",
+    price: 15000,
+    Avilable: true
+  }, {
+    product: "tv",
+    price: 35000,
+    Avilable: true
+  }, {
+    product: "laptop",
+    price: 55000,
+    Avilable: true
+  }]
+  const Post = [
+    {
+      id: 1,
+      author: "eswar",
+      title: "lion of judhan",
+      description: "fills fire inside"
+    }, {
+      id: 2,
+      author: "devi",
+      title: "lion of judhan",
+      description: "fills fire inside"
+    }, {
+      id: 3,
+      author: "sri",
+      title: "tiger of bengal",
+      description: "king of jungle"
+    }
+  ]
+
+  // const Name = "K.DEVI SRI ESWAR"
+  // const Course = "B.TECH(CSE)"
+  // const Rollnumber = "24VV1A0531"
+  //const Bloodgroup = "o+ve"
+  // const DOB="06/01/2006"
+
+
+  return (
+    <div className="app">
+      {/* {
+        Array.map((pro) => (
+          <ProductCard product={pro.product} price={pro.price} Avilable={pro.Avilable} />
+        )
+      )
+      } */}
+      {
+        Post.map((x) => (
+          <BlogPost key={x.id} author={x.author} title={x.title} description={x.description} />
+        ))
+      }
+    </div>
+
+
+  )
+}
+
+export default App

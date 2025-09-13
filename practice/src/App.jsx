@@ -1,20 +1,17 @@
-import Id from "./Id"
-
+import { useState } from "react"
 
 function App() {
+  const [count, setCount] = useState(0)
 
-  const Name = "K.DEVI SRI ESWAR"
-  const Course = "B.TECH(CSE)"
-  const Rollnumber = "24VV1A0531"
-  const Bloodgroup = "o+ve"
-  const DOB="06/01/2006"
-
+  const handleIncrement = () => {
+    setCount((prev)=>prev+1)
+  }
 
   return (
-    <div className="box">
-      <Id Name={Name} Course={Course} Rollnumber={Rollnumber} Bloodgroup={Bloodgroup} DOB={DOB}  />
+    <div>
+      <p>{count}</p>
+      <button onClick={handleIncrement}>Increment</button>
     </div>
   )
 }
-
 export default App

@@ -1,10 +1,11 @@
-function ProductCard({product, price, Avilable}) {
-
+import "./index.css"
+function ProductCard(Product) {
     return (
-        <div>
-            <p>productname:{product}</p>
-            <p>price:{price}</p>
-            <p>isAvilable:{Avilable === true ? "in stoke" : "out of stoke"} </p>
+        <div className="container">
+        
+            <p className="title">productname:{Product.product}</p>
+            <p className="price">price:{Product.price}</p>
+            <p >{Product.Avilable === true ? <p className='in_stoke'>instoke </p>:<p className='stoke'>out of stoke </p>} </p>
         </div>
     )
 

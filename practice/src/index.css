@@ -1,0 +1,31 @@
+.title{
+    font-size: 20px;
+    color: red;
+}
+
+.container{
+    border: 5px solid black;
+    display: flex;
+    flex-direction: column;
+   padding: 10px;
+}
+.box{
+    border: 30px;
+    display: flex;
+    flex-direction: horizontal;
+}
+
+.price{
+    color: brown;
+}
+.stoke{
+    color:red;
+}
+.in_stoke{
+    color: green;
+}
+
+.photo{
+    height: 120px;
+
+}

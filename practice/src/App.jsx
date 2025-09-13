@@ -1,19 +1,19 @@
-import ProductCard from "./ProductCard"
+import Id from "./Id"
 
 
 function App() {
 
-  const productname = "chocolates"
-  const price = 999
-  const Avilable = true
+  const Name = "K.DEVI SRI ESWAR"
+  const Course = "B.TECH(CSE)"
+  const Rollnumber = "24VV1A0531"
+  const Bloodgroup = "o+ve"
+  const DOB="06/01/2006"
 
 
   return (
-    <>
-      <ProductCard product={productname} price={price} Avilable={Avilable} />
-
-
-    </>
+    <div className="box">
+      <Id Name={Name} Course={Course} Rollnumber={Rollnumber} Bloodgroup={Bloodgroup} DOB={DOB}  />
+    </div>
   )
 }
 
